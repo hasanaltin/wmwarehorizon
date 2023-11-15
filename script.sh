@@ -9,16 +9,6 @@ if [ ! "${systemd}" = "systemd" ]; then
   exit 100
 fi
 
-echo "Do you want to install ETC Softwares?"
-read -r -p "$1 [y/N] " response < /dev/tty
-if [[ $response =~ ^(yes|y|Y)$ ]]; then
-    echo "Greats ! The installation has started."
-else
-    echo "OK. Exiting"
-    exit
-fi
-
-
 pwd
 ls
 cd ~/Downloads
