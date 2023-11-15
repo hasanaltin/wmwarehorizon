@@ -9,7 +9,7 @@ else
 	apt-get update && sudo apt-get upgrade -y
 
 	sudo apt-get install dialog
-	cmd=(dialog --separate-output --checklist "Please Select Software you want to install:" )
+	cmd=(dialog --separate-output --checklist "Please Select Software you want to install: 4" )
 	options=(1 "Sublime Text 3" off    # any option can be set to default to "on"
 	         2 "ERY Support" off
 	         3 "VMware Horizon Client" off
